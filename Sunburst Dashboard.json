@@ -1,0 +1,210 @@
+{
+    ".meta": {
+        "comment": "Dashboard to show Sunburst DNS IOCs",
+        "created": 1608213630,
+        "name": "Sunburst Dashboard",
+        "version": "8.2.1.2050",
+        "version_min": ""
+    },
+    "Dashboard": [
+        {
+            "author": "thughes@extrahop.com",
+            "description": null,
+            "name": "Sunburst DNS IOCs",
+            "object_type": "any",
+            "shortcut": "sunburst",
+            "theme": [
+                [
+                    "name",
+                    "flat"
+                ]
+            ],
+            "type": "summary_dashboard",
+            "username": null
+        }
+    ],
+    "Region": [
+        {
+            "dashboard": [
+                [
+                    "object_type",
+                    "any"
+                ],
+                [
+                    "name",
+                    "Sunburst DNS IOCs"
+                ],
+                [
+                    "owner",
+                    null
+                ],
+                [
+                    "type",
+                    "summary_dashboard"
+                ]
+            ],
+            "name": "DNS IOCs",
+            "uuid": "ed4f3b53a093405e95df2467e79792a6"
+        }
+    ],
+    "RegionDimension": [
+        {
+            "grid": [
+                [
+                    "name",
+                    "pc"
+                ]
+            ],
+            "h": 7,
+            "region": [
+                [
+                    "uuid",
+                    "ed4f3b53a093405e95df2467e79792a6"
+                ]
+            ],
+            "w": 12,
+            "x": 0,
+            "y": 0
+        }
+    ],
+    "SeriesGroupMetric": [
+        {
+            "calculation_opts": null,
+            "calculation_type": "count",
+            "index": 0,
+            "metric": [
+                [
+                    "field_name",
+                    "req"
+                ],
+                [
+                    "category",
+                    [
+                        [
+                            "name",
+                            "dns_host_query_detail"
+                        ],
+                        [
+                            "object_type",
+                            "application"
+                        ]
+                    ]
+                ],
+                [
+                    "type",
+                    "count"
+                ]
+            ],
+            "options": "{}",
+            "topn_key": null,
+            "widget_series_group": [
+                [
+                    "widget",
+                    [
+                        [
+                            "uuid",
+                            "4246f61fc11a4d828b02f5cc13d6e85d"
+                        ]
+                    ]
+                ],
+                [
+                    "index",
+                    0
+                ]
+            ]
+        }
+    ],
+    "SeriesGroupObject": [
+        {
+            "index": 0,
+            "object_key": [
+                [
+                    "application_id",
+                    "_default"
+                ],
+                [
+                    "capture_key",
+                    [
+                        [
+                            "macaddr",
+                            ""
+                        ]
+                    ]
+                ]
+            ],
+            "object_type": "application",
+            "widget_series_group": [
+                [
+                    "widget",
+                    [
+                        [
+                            "uuid",
+                            "4246f61fc11a4d828b02f5cc13d6e85d"
+                        ]
+                    ]
+                ],
+                [
+                    "index",
+                    0
+                ]
+            ]
+        }
+    ],
+    "Widget": [
+        {
+            "name": "DNS Requests to IOC Domains",
+            "options": "{\"ipLabelType\": \"host\", \"ipLabelShowCustomNames\": true, \"hasAlertColor\": false, \"hasSparklines\": false, \"sorting\": \"value\", \"bytesAsBits\": false, \"hideLegend\": false, \"filterInactiveMetrics\": true}",
+            "region": [
+                [
+                    "uuid",
+                    "ed4f3b53a093405e95df2467e79792a6"
+                ]
+            ],
+            "shortcut": null,
+            "text_widget_content": null,
+            "trend_calculation_opts": null,
+            "trend_calculation_type": null,
+            "trend_windowing_count": null,
+            "trend_windowing_model": null,
+            "type": "list",
+            "uuid": "4246f61fc11a4d828b02f5cc13d6e85d"
+        }
+    ],
+    "WidgetDimension": [
+        {
+            "grid": [
+                [
+                    "name",
+                    "pc"
+                ]
+            ],
+            "h": 7,
+            "w": 12,
+            "widget": [
+                [
+                    "uuid",
+                    "4246f61fc11a4d828b02f5cc13d6e85d"
+                ]
+            ],
+            "x": 0,
+            "y": 0
+        }
+    ],
+    "WidgetSeriesGroup": [
+        {
+            "are_sources_combined": true,
+            "group_by_label": "Host Query",
+            "index": 0,
+            "is_exact_topn_match": false,
+            "is_ratio": false,
+            "topn_key": "avsvmcloud|freescanonline|deftsecurity|thedoccloud|incomeupdate|zupertech|databasegalore|panhardware|websitetheme|highdatabase|virtualdataserver",
+            "topn_max": 20,
+            "widget": [
+                [
+                    "uuid",
+                    "4246f61fc11a4d828b02f5cc13d6e85d"
+                ]
+            ]
+        }
+    ]
+}
